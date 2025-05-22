@@ -26,3 +26,14 @@ This endpoint is used to add a new school to the database.
   "latitude": 12.9716,
   "longitude": 77.5946
 }
+```
+
+### 2. **GET /listSchools**
+This endpoint is used to retrieve schools sorted by proximity to a specified location
+
+#### Request
+- **URL**: `/listSchools`
+- **Method**: `GET`
+- **Query Parameters**:
+  -`latitude (required): Your current latitude (float)`
+  -`longitude (required): Your current longitude (float)`
