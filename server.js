@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const schoolRoutes = require('./routes/schoolRoutes');
 require('dotenv').config();
+const db = require('./config/db')
 
 app.use(express.json());
 app.use('/', schoolRoutes);
